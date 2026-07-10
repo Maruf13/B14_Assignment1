@@ -3,7 +3,7 @@
 A single-page conference landing site built with plain HTML5 and CSS3 (no JS, no frameworks) for the DevConf 2026 assignment.
 
 - **Repo:** https://github.com/Maruf13/B14_Assignment1
-- **Live site:** _add GitHub Pages link here_
+- **Live site:** https://maruf13.github.io/B14_Assignment1/
 - **AI prompts used (Placeholder Section):** see [PROMPTS.md](./PROMPTS.md)
 
 ---
@@ -44,7 +44,7 @@ A single-page conference landing site built with plain HTML5 and CSS3 (no JS, no
 - [x] Prompt used is documented in [PROMPTS.md](./PROMPTS.md)
 
 ### Other Requirements
-- [x] 5+ GitHub commits (9 commits so far)
+- [x] 5+ GitHub commits (8 commits so far)
 - [x] No Lorem Ipsum anywhere
 - [x] No duplicated/copy-pasted text across repeating sections
 
