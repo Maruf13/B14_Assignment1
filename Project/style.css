@@ -107,4 +107,30 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 150px;
+    gap: 30px;
+}
+
+.speakers {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+}
+
+.speakers img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+
+.details {
+    padding: 24px;
+}
+
+.track {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #083d87;
+    margin-bottom: 8px;
 }
