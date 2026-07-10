@@ -86,6 +86,11 @@ nav ul {
     color: white;
 }
 
+.title em {
+    font-style: italic;
+    font-weight: 700;
+}
+
 .subtitle {
     font-size: 24px;
     font-weight: 400;
@@ -203,6 +208,17 @@ nav ul {
     color: #333;
 }
 
+.features-list li::before {
+    content: "\2022";
+    font-size: 20px;
+    line-height: 1;
+    color: #1D4ED8;
+}
+
+.featured .features-list li::before {
+    color: white;
+}
+
 .pricing-action {
     padding: 24px;
     text-align: center;
@@ -244,14 +260,100 @@ nav ul {
     color: white;
 }
 
+/* FAQ Section */
+.faq {
+    margin-top: 50px;
+    padding: 60px 150px 80px;
+    background-color: #f8f9fb;
+    text-align: center;
+}
+
+.faq-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0D1B2A;
+}
+
+.faq-subtitle {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.faq-list {
+    max-width: 860px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    padding: 22px 28px;
+    transition: border-color 0.3s ease;
+}
+
+.faq-item[open] {
+    border-color: #1D4ED8;
+}
+
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0D1B2A;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #eef2ff;
+    color: #1D4ED8;
+    font-size: 18px;
+    font-weight: 400;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-item[open] .faq-icon {
+    background-color: #1D4ED8;
+    color: #fff;
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eef0f3;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
 /* footer section */
 
 footer,
 .footer {
-    background-color: #e4def3;
+    background-color: #0D1B2A;
     padding: 80px 150px 60px 150px;
-    border-top: 1px solid #f3f4f6;
-    color: #4b5563;
+    color: #9ca3af;
     font-family: inherit;
     margin-top: 50px;
 }
@@ -260,11 +362,8 @@ footer,
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
-}
-
-.footer-left {
-    flex: 1;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .footer-left img {
@@ -273,35 +372,21 @@ footer,
     object-fit: contain;
 }
 
-.footer-right {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.footer-right-top {
-    display: flex;
-    justify-content: flex-end;
-    gap: 120px;
-}
-
-.footer-right-top-left,
-.footer-right-top-right {
+.footer-col {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.footer-right-top h3 {
-    color: #111827;
+.footer-col h3 {
+    color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px;
     margin: 0;
 }
 
-.footer-right-top ul {
+.footer-col ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -309,19 +394,41 @@ footer,
     margin: 0;
 }
 
-.footer-right-top ul li {
+.footer-col ul li {
     font-size: 15px;
-    color: #6b7280;
+    color: #9ca3af;
 }
 
-.footer-right-bottom {
+.social-icons {
     display: flex;
-    justify-content: flex-end;
-    border-top: 1px solid #f3f4f6;
+    gap: 12px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #083d87;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #1D4ED8;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 50px;
     padding-top: 24px;
 }
 
-.footer-right-bottom p {
+.footer-bottom p {
     font-size: 14px;
     color: #9ca3af;
     margin: 0;

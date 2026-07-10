@@ -1,0 +1,1 @@
+"Add a new FAQ section after the pricing section for the DevConf 2026 assignment, keep it on-theme, no JavaScript allowed, and adjust the color combination to fit the existing blue/navy palette."
