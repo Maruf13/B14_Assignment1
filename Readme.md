@@ -49,7 +49,7 @@ A single-page conference landing site built with plain HTML5 and CSS3 (no JS, no
 - [x] No duplicated/copy-pasted text across repeating sections
 
 ### Optional
-- [ ] Concept explanation video (not recorded)
+- [x] Concept explanation video: https://drive.google.com/file/d/15KW0PoN0jTJkgdGRbHvJE-HW5IdKLwqE/view?usp=sharing
 
 ---
 
